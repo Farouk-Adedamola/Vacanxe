@@ -1,0 +1,76 @@
+.main {
+  margin-top: 4rem;
+}
+.section {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-family: "poppins";
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #181818;
+}
+
+.section p {
+  font-family: "poppins";
+  font-weight: normal;
+  font-size: 14px;
+  color: #000c2d;
+}
+
+.wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #4196b8;
+}
+
+.wrap div a {
+  margin-right: 8px;
+  font-family: "poppins";
+  font-size: 14px;
+  color: #4196b8;
+}
+
+.secondSection {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 760px) {
+  .main {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section {
+    margin-left: 0;
+    width: 50%;
+  }
+
+  .section h2 {
+    width: 300px;
+    font-size: 28px;
+  }
+
+  .section p {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section h2 {
+    width: 379px;
+    font-size: 28px;
+  }
+
+  .section p {
+    width: 410px;
+    font-size: 1rem;
+  }
+}
