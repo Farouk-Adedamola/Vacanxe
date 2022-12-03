@@ -5,6 +5,9 @@ import Nav from "./Components/Navigation/Nav";
 import Main from "./Components/Main/Main";
 import CenterButton from "./Components/CenterButton/CenterButton";
 import Card1 from "./Components/Cards/Card1";
+import Card2 from "./Components/Cards/Card2";
+import Card3 from "./Components/Cards/Card3";
+import Build from "./Components/BuildSection/Build";
 
 function App() {
   return (
@@ -14,6 +17,11 @@ function App() {
       <CenterButton />
       <section className={classes.wrapper}>
         <Card1 />
+        <Card2 />
+        <Card3 />
+      </section>
+      <section className={classes.section}>
+        <Build />
       </section>
     </Fragment>
   );

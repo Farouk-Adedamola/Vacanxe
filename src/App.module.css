@@ -27,9 +27,16 @@ h2 {
   font-size: 28px;
 } */
 
+.section {
+  background: #f4fbff;
+}
+
 @media screen and (min-width: 760px) {
   .wrapper {
     padding: 0 70px 0 100px;
+  }
+  .section {
+    padding: 0 60px 0 85px;
   }
 }
 
@@ -37,10 +44,8 @@ h2 {
   .wrapper {
     padding: 0 150px 0 200px;
   }
-}
 
-@media screen and (min-width: 1200px) {
   .section {
-    padding: 0 240px 0 300px;
+    padding: 0 135px 0 180px;
   }
 }
