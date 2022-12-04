@@ -14,7 +14,7 @@ function App() {
   return (
     <Fragment>
       <Nav />
-      {/* <Main /> */}
+      <Main />
       <CenterButton />
       <section className={classes.wrapper}>
         <Card1 />

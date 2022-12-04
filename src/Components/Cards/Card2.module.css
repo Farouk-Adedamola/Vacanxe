@@ -81,18 +81,20 @@
 
 @media screen and (min-width: 1200px) {
   .main {
-    display: flex;
-    width: 80vw;
-    justify-content: space-between;
-    /* grid-template-columns: 1fr 1fr; */
-    /* gap: 164px; */
+    /* display: flex; */
+    /* width: 80vw; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 164px;
   }
   .secondSection img {
     width: 367px;
   }
 
   .section {
-    padding-left: 0;
+    /* padding-right: -164px; */
+    /* padding-left: 0; */
   }
 
   .section h2 {
