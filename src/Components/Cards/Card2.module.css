@@ -81,12 +81,18 @@
 
 @media screen and (min-width: 1200px) {
   .main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 164px;
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    /* grid-template-columns: 1fr 1fr; */
+    /* gap: 164px; */
   }
   .secondSection img {
     width: 367px;
+  }
+
+  .section {
+    padding-left: 0;
   }
 
   .section h2 {
@@ -97,5 +103,12 @@
   .section p {
     width: 410px;
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .main {
+    width: 70vw;
+    margin: 0 auto;
   }
 }

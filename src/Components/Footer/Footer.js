@@ -1,18 +1,23 @@
 import React, { Fragment } from "react";
 import classes from "./Footer.module.css";
 import logo from "../../Assets/logo.svg";
+import { FaTwitter, FaFacebook, FaGoogle } from "react-icons/fa";
+
 import { Community, AboutUs, Contacts } from "./data";
 
 const Footer = () => {
   return (
     <Fragment>
       <section className={classes.section}>
-        <img src={logo} alt="logo" />
+        <div className={classes.image}>
+          <img src={logo} alt="logo" />
+        </div>
       </section>
       <section className={classes.secondSection}>
         <div className={classes.first}>
           <p>
-            Feel free to get in touch with us via phone or send us a message.
+            Your ulitmate email solution to grow business and engaging with
+            future customers and clients.
           </p>
           <button>
             <a href="/">Ask Question</a>
@@ -56,6 +61,25 @@ const Footer = () => {
           </div>
         </main>
       </section>
+      <div className={classes.overall}>
+        <div className={classes.underline}></div>
+        <div className={classes.last}>
+          <div className={classes.baseline}>
+            <p>&copy;Vacanxe 2022, All Rights Reserved</p>
+            <div className={classes.logoFlex}>
+              <a href="/">
+                <FaTwitter />
+              </a>
+              <a href="/">
+                <FaFacebook />
+              </a>
+              <a href="/">
+                <FaGoogle />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </Fragment>
   );
 };

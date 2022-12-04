@@ -1,17 +1,26 @@
-.section {
-  position: relative;
-}
-
 a {
   text-decoration: none;
-  color: #fff;
+  font-family: "roboto";
+  color: #e9f7fe;
 }
 
 ul {
   list-style: none;
 }
 
+h4 {
+  font-size: 18px;
+  color: #8c97ac;
+  font-family: "roboto";
+}
+
+.section {
+  position: relative;
+  margin-bottom: 0;
+}
+
 .section img {
+  display: block;
   width: 140px;
   background: #fff;
   padding: 10px 35px 55px 0;
@@ -19,44 +28,268 @@ ul {
   border-radius: 0 5% 70% 40%;
 }
 
-@media screen and (max-width: 760px) {
-  .secondSection {
-    width: 90vw;
-    margin: 0 auto;
-  }
+.secondSection {
+  width: 90vw;
+  margin: 0 auto;
+}
 
+.first {
+  margin: 0 auto;
+}
+
+.first p,
+.contactText p {
+  color: #e9f7fe;
+}
+
+.first button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.first button {
+  background: #00b6ff;
+  padding: 13px 12px;
+  border: none;
+  border-radius: 10px;
+}
+
+.contacts {
+  /* width: 50vw; */
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.last {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.baseline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoFlex a {
+  margin-left: 5px;
+}
+
+.underline {
+  background: #313d55;
+  height: 1px;
+  width: 90vw;
+  margin: 0 auto;
+  transition: all 0.6s;
+}
+
+.baseline p {
+  font-size: 13px;
+  color: #8c97ac;
+  /* display: flex; */
+}
+
+.underline:hover {
+  background: #fff;
+}
+
+@media screen and (min-width: 760px) {
+  .section {
+    padding-top: 5rem;
+  }
+  .secondSection {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    /* padding-bottom: 5rem; */
+  }
+  .image img {
+    position: absolute;
+    top: 0;
+    left: -3.5rem;
+    width: 181px;
+    background: #fff;
+    padding: 10px 35px 55px 0;
+    object-fit: cover;
+    border-radius: 0 8% 60% 40%;
+  }
+  .contacts {
+    /* width: 150px; */
+  }
+  .contactText p {
+    width: 150px;
+  }
   .first {
-    width: 50vw;
-    margin: 0 auto;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    padding-left: 40px;
   }
 
   .first p {
-    color: #fff;
+    color: #8c97ac;
+    width: 266px;
+  }
+
+  .container ul li {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .container ul li a {
+    font-size: 12px;
   }
 
   .first button {
     background: #00b6ff;
-    padding: 13px 10px;
+    padding: 13px 12px;
     border: none;
     border-radius: 10px;
   }
-  .first button a {
-    color: #fff;
-    text-decoration: none;
-  }
 
   .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    /* border: 1px solid red; */
+  }
+
+  .container ul {
+    margin-top: 0 !important;
+  }
+
+  .main {
+    display: flex;
+    align-items: flex-start;
+    /* justify-self: center; */
+    /* border: 1px solid red; */
+    /* margin-left: -1rem; */
+    padding: 0;
   }
 
   .contacts {
-    width: 50vw;
-    margin: 0 auto;
-    padding-bottom: 5rem;
+    /* border: 1px solid red; */
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
   }
 
-  .contactText p {
+  .contactText {
+    width: 200px;
     color: #fff;
+  }
+
+  .overall {
+    padding-top: 124px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .first {
+    padding-left: 0;
+  }
+  .main {
+    padding-left: 0;
+  }
+
+  .underline {
+    width: 80vw;
+  }
+  .last {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .image img {
+    margin-left: -2rem;
+  }
+
+  .first {
+    /* border: 1px solid red; */
+    margin-left: 0;
+    padding-left: 100px;
+  }
+
+  .contacts {
+    padding-right: 75px;
+  }
+
+  .secondSection {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin: 0;
+    display: flex;
+    /* justify-content: center; */
+  }
+
+  .main {
+    /* justify-self: flex-start; */
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .underline {
+    background: #313d55;
+    height: 1px;
+    width: 75vw;
+    margin: 0 auto;
+    transition: all 0.6s;
+  }
+
+  .last {
+    width: 75vw;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .secondSection {
+    width: 80vw;
+    margin: 0 auto;
+    /* padd */
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-around;
+    width: 650px;
+  }
+
+  .container {
+    padding-right: 40px;
+  }
+
+  .first p,
+  .contactText p,
+  .container ul li a {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .container ul {
+    margin-top: 16px;
+    /* line-height: 35px; */
+  }
+
+  /* .first {
+    align-self: flex-end;
+  } */
+
+  .contactText p {
+    width: 255px;
+  }
+
+  .container ul li {
+    width: 120px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    padding-right: 80px;
+    margin-left: -5rem;
   }
 }
