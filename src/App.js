@@ -8,12 +8,13 @@ import Card1 from "./Components/Cards/Card1";
 import Card2 from "./Components/Cards/Card2";
 import Card3 from "./Components/Cards/Card3";
 import Build from "./Components/BuildSection/Build";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
     <Fragment>
       <Nav />
-      <Main />
+      {/* <Main /> */}
       <CenterButton />
       <section className={classes.wrapper}>
         <Card1 />
@@ -23,6 +24,9 @@ function App() {
       <section className={classes.section}>
         <Build />
       </section>
+      <footer className={classes.footer}>
+        <Footer />
+      </footer>
     </Fragment>
   );
 }

@@ -29,6 +29,11 @@ h2 {
 
 .section {
   background: #f4fbff;
+  padding-bottom: 150px;
+}
+
+.footer {
+  background: #1d293f;
 }
 
 @media screen and (min-width: 760px) {
@@ -37,6 +42,30 @@ h2 {
   }
   .section {
     padding: 0 60px 0 85px;
+  }
+  .footer {
+    padding: 0 45px 0 65px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .section {
+    /* padding: 0; */
+    padding: 0 80px 0 70px;
+  }
+
+  .footer {
+    padding: 0 65px 0 55px;
+    /* margin-top: 100px; */
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .section {
+    padding: 0 90px 0 100px;
+  }
+  .footer {
+    padding: 0 75px 0 85px;
   }
 }
 
@@ -47,5 +76,23 @@ h2 {
 
   .section {
     padding: 0 135px 0 180px;
+  }
+
+  .footer {
+    padding: 0 115px 0 160px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper {
+    padding: 0 385px 0 300px;
+  }
+
+  .section {
+    padding: 0 283px 0 272px;
+  }
+
+  .footer {
+    padding: 0 115px 0 160px;
   }
 }

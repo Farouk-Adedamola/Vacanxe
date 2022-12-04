@@ -1,7 +1,13 @@
 .main {
   padding-top: 24px;
-  width: 90vw;
+  /* width: 90vw; */
   margin: 0 auto;
+}
+
+@media screen and (max-width: 760px) {
+  .main {
+    width: 90vw;
+  }
 }
 
 .container h1 {
@@ -30,7 +36,7 @@
   flex-direction: column;
 }
 .secondSection {
-  display: none;
+  /* display: none; */
 }
 
 label {
@@ -73,6 +79,51 @@ textarea {
   font-family: "poppins";
 }
 
+.secondSection h2 {
+  color: #1d272e;
+  font-family: "poppins";
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.location p,
+.numbers p {
+  /* margin-left: 20px; */
+  font-family: "poppins";
+  width: 250px;
+  margin-top: 0;
+}
+
+.phone {
+  display: flex;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #4196b8;
+  align-self: flex-start;
+}
+
+.socialSection {
+  margin-top: 1rem;
+}
+
+.social {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background: #bfc5d0;
+  padding: 8px;
+  border-radius: 9px;
+}
+
+.social:first-child {
+  margin-left: 0;
+}
 @media screen and (min-width: 450px) {
   input {
     padding: 15px 20px;
@@ -84,4 +135,86 @@ textarea {
 }
 
 @media screen and (min-width: 760px) {
+  .main {
+    border: 1px solid red;
+    padding-bottom: 100px;
+  }
+  .section {
+    display: flex;
+    align-items: center;
+  }
+
+  .container p {
+    width: 330px;
+  }
+
+  .section {
+    justify-self: flex-start;
+  }
+  input {
+    width: 300px;
+  }
+
+  .secondSection {
+    width: 250px;
+    align-self: flex-start;
+    margin-top: 25px;
+    padding-left: 65px;
+  }
+
+  .location p {
+    width: 220px;
+  }
+  .icon {
+    font-size: 2rem;
+  }
+
+  .numbers p {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .secondSection {
+    width: 270px;
+  }
+
+  .icon {
+    border: 1px solid red;
+  }
+
+  .location p {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 900) {
+  .section {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    width: 570px;
+  }
+
+  .secondSection {
+    padding-left: 90px;
+  }
+
+  input {
+    width: 500px;
+    padding: 18px 25px;
+  }
+
+  .container h1 {
+    font-size: 36px;
+  }
+
+  .container p {
+    width: 575px;
+    font-size: 1rem;
+  }
 }
