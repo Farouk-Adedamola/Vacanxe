@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 95vw;
+  width: 90vw;
   margin: 0 auto;
   padding: 10px 0;
 }
@@ -19,9 +19,8 @@
   font-size: 2.5rem;
   background: transparent;
   cursor: pointer;
-  width: 3.5rem;
-  color: #00c4cc;
-  transition: all 0.6s;
+  color: #ffae1b;
+  transition: all 1s;
 }
 
 .article {
@@ -35,9 +34,10 @@
   transition: all 0.5s;
   height: 0;
   overflow: hidden;
+  /* margin-left: -1rem; */
 }
 
-.article ul {
+.article > ul {
   list-style: none;
   line-height: 3rem;
   display: flex;
@@ -50,11 +50,18 @@
   text-decoration: none;
   font-family: "poppins";
   font-size: 18px;
-  text-align: center;
+}
+
+.firstLink {
+  margin-left: -1rem;
 }
 
 .secondLink {
-  margin-top: 0;
+  margin-top: -1rem;
+  margin-left: -1rem;
+
+  /* padding-left: 0; */
+  border: 1px solid red;
 }
 
 .first {
@@ -88,10 +95,8 @@
     background: transparent;
     margin: 0;
     display: flex;
-    /* width: 60vw; */
     flex-direction: row;
     align-items: baseline;
-    /* justify-content: space-between; */
   }
 
   .article2 {

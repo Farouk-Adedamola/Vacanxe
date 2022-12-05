@@ -45,6 +45,7 @@
 }
 
 .group {
+  /* display: none; */
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -52,6 +53,12 @@
 
 .group img {
   mix-blend-mode: luminosity;
+}
+
+@media screen and (max-width: 760px) {
+  .group img {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 760px) {
