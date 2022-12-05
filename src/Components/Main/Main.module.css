@@ -51,7 +51,6 @@
 }
 
 .group img {
-  /* display: none; */
   mix-blend-mode: luminosity;
 }
 
