@@ -31,56 +31,58 @@ const Build = () => {
           </p>
         </div>
         <section className={classes.section}>
-          <form onSubmit={submitHandler} className={classes.form}>
-            <label>Your name</label>
-            <input
-              type="text"
-              placeholder="Enter your name"
-              value={name}
-              onChange={(e) => {
-                setName(e.target.value);
-              }}
-            />
-            <label htmlFor="">Your email</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-            />
-            <label htmlFor="">Your phone number</label>
-            <input
-              type="number"
-              placeholder="Enter your number"
-              value={phone}
-              onChange={(e) => {
-                setPhone(e.target.value);
-              }}
-            />
-            <label htmlFor="">Your company name</label>
-            <input
-              type="text"
-              placeholder="Enter your company name"
-              value={company}
-              onChange={(e) => {
-                setCompany(e.target.value);
-              }}
-            />
-            <label>message</label>
-            <textarea
-              placeholder="type here.."
-              value={message}
-              onChange={(e) => {
-                setMessage(e.target.value);
-              }}
-            />
-            <div className={classes.button}>
-              <button type="submit">Consult with us</button>
-            </div>
-          </form>
+          <article className={classes.one}>
+            <form onSubmit={submitHandler} className={classes.form}>
+              <label>Your name</label>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+              />
+              <label htmlFor="">Your email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
+              <label htmlFor="">Your phone number</label>
+              <input
+                type="number"
+                placeholder="Enter your number"
+                value={phone}
+                onChange={(e) => {
+                  setPhone(e.target.value);
+                }}
+              />
+              <label htmlFor="">Your company name</label>
+              <input
+                type="text"
+                placeholder="Enter your company name"
+                value={company}
+                onChange={(e) => {
+                  setCompany(e.target.value);
+                }}
+              />
+              <label>message</label>
+              <textarea
+                placeholder="type here.."
+                value={message}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
+              />
+              <div className={classes.button}>
+                <button type="submit">Consult with us</button>
+              </div>
+            </form>
+          </article>
           <section className={classes.secondSection}>
             <h2>Contact info:</h2>
             <div className={classes.location}>

@@ -78,7 +78,6 @@
     width: 200px;
     padding: 0;
     margin: 0;
-    border: 1px solid red;
   }
   .image button {
     display: none;
@@ -88,12 +87,15 @@
     height: auto !important;
     background: transparent;
     margin: 0;
-    border: 1px solid red;
     display: flex;
-    width: 60vw;
+    /* width: 60vw; */
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+  }
+
+  .article2 {
+    display: flex;
   }
 
   .article ul {
@@ -108,10 +110,11 @@
   .article ul li a {
     font-size: 14px;
   }
-
   .firstLink {
-    /* transform: translateX(-1rem); */
-    /* margin-left: -3rem; */
+    justify-self: flex-start;
+  }
+  .secondLink {
+    justify-self: flex-end;
   }
 }
 
@@ -120,29 +123,10 @@
     font-size: 15px;
   }
 }
-/* 
-@media screen and (min-width: 920px) {
-  .article {
-    width: 60vw;
-  }
-  .article ul li {
-    margin-left: 15px;
-  }
-
-  .article ul li a {
-    font-size: 18px;
-  }
-  .firstLink {
-  }
-  .section img {
-    width: 181px;
-    height: 60px;
-  }
-} */
 
 @media screen and (min-width: 1000px) {
   .article {
-    width: 60vw;
+    /* width: 60vw; */
   }
   .article ul li a {
     font-size: 15px;
@@ -150,12 +134,13 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .section {
+    padding: 0 97px 0 65px;
+  }
   .article {
-    width: 65vw;
+    /* width: 65vw; */
   }
-  .secondLink {
-    padding-right: 90px;
-  }
+
   .article ul li {
     margin-left: 35px;
   }

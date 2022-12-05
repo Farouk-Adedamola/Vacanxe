@@ -1,6 +1,5 @@
 .main {
   padding-top: 24px;
-  /* width: 90vw; */
   margin: 0 auto;
 }
 
@@ -14,11 +13,11 @@
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 0;
+  color: #4b4c4e;
   font-family: "poppins";
 }
 
 .container p {
-  /* margin-top: 10px; */
   font-size: 14px;
   font-family: "poppins";
 }
@@ -34,9 +33,6 @@
   padding-top: 30px;
   display: flex;
   flex-direction: column;
-}
-.secondSection {
-  /* display: none; */
 }
 
 label {
@@ -55,12 +51,12 @@ input {
   border: transparent;
   border-radius: 10px;
   margin-top: 4px;
+  outline: transparent;
 }
 
 textarea {
   padding: 8px 14px;
   height: 120px;
-  /* padding: 14px 258px 100px 23px; */
   border-radius: 10px;
   border: none;
 }
@@ -91,7 +87,6 @@ textarea {
 
 .location p,
 .numbers p {
-  /* margin-left: 20px; */
   font-family: "poppins";
   width: 250px;
   margin-top: 0;
@@ -136,19 +131,18 @@ textarea {
 
 @media screen and (min-width: 760px) {
   .main {
-    border: 1px solid red;
     padding-bottom: 100px;
   }
   .section {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
   }
 
   .container p {
     width: 330px;
   }
 
-  .section {
+  .form {
     justify-self: flex-start;
   }
   input {
@@ -156,10 +150,10 @@ textarea {
   }
 
   .secondSection {
-    width: 250px;
+    width: 50%;
+    padding-left: 50px;
     align-self: flex-start;
-    margin-top: 25px;
-    padding-left: 65px;
+    padding-top: 40px;
   }
 
   .location p {
@@ -177,14 +171,21 @@ textarea {
 @media screen and (min-width: 800px) {
   .secondSection {
     width: 270px;
-  }
-
-  .icon {
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
   }
 
   .location p {
     width: 270px;
+  }
+
+  input {
+    width: 340px;
+  }
+
+  .container p {
+    width: 380px;
   }
 }
 
@@ -192,12 +193,14 @@ textarea {
   .section {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .section {
-    width: 570px;
+  .underline {
+    width: 95px;
+    height: 5px;
   }
 
   .secondSection {
@@ -216,5 +219,11 @@ textarea {
   .container p {
     width: 575px;
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  input {
+    width: 574px;
   }
 }

@@ -77,7 +77,7 @@ h4 {
 }
 
 .logoFlex a {
-  margin-left: 5px;
+  margin-left: 18.67px;
 }
 
 .underline {
@@ -106,33 +106,26 @@ h4 {
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
-    /* padding-bottom: 5rem; */
   }
-  .image img {
+  .image {
     position: absolute;
     top: 0;
-    left: -3.5rem;
-    width: 181px;
-    background: #fff;
-    padding: 10px 35px 55px 0;
-    object-fit: cover;
-    border-radius: 0 8% 60% 40%;
+    left: -4.5rem;
   }
-  .contacts {
-    /* width: 150px; */
-  }
+
   .contactText p {
     width: 150px;
+    font-size: 13px;
   }
   .first {
     align-self: flex-end;
-    margin-bottom: 10px;
-    padding-left: 40px;
+    margin-bottom: 30px;
   }
 
   .first p {
     color: #8c97ac;
     width: 266px;
+    font-size: 13px;
   }
 
   .container ul li {
@@ -141,7 +134,7 @@ h4 {
   }
 
   .container ul li a {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .first button {
@@ -153,7 +146,6 @@ h4 {
 
   .container {
     display: flex;
-    /* border: 1px solid red; */
   }
 
   .container ul {
@@ -163,17 +155,13 @@ h4 {
   .main {
     display: flex;
     align-items: flex-start;
-    /* justify-self: center; */
-    /* border: 1px solid red; */
-    /* margin-left: -1rem; */
-    padding: 0;
+    /* padding-left: 50px; */
   }
 
   .contacts {
-    /* border: 1px solid red; */
     align-self: flex-start;
     margin: 0;
-    padding: 0;
+    padding-left: 40px;
   }
 
   .contactText {
@@ -204,11 +192,10 @@ h4 {
 
 @media screen and (min-width: 1000px) {
   .image img {
-    margin-left: -2rem;
+    margin-left: -1rem;
   }
 
   .first {
-    /* border: 1px solid red; */
     margin-left: 0;
     padding-left: 100px;
   }
@@ -222,11 +209,9 @@ h4 {
     padding-bottom: 1rem;
     margin: 0;
     display: flex;
-    /* justify-content: center; */
   }
 
   .main {
-    /* justify-self: flex-start; */
     margin-left: 0;
     padding-left: 0;
   }
@@ -249,7 +234,6 @@ h4 {
   .secondSection {
     width: 80vw;
     margin: 0 auto;
-    /* padd */
   }
 
   .main {
@@ -263,20 +247,19 @@ h4 {
   }
 
   .first p,
-  .contactText p,
-  .container ul li a {
+  .contactText p {
     font-size: 16px;
     line-height: 28px;
   }
 
-  .container ul {
-    margin-top: 16px;
-    /* line-height: 35px; */
+  .container ul li a {
+    line-height: 42px;
+    font-size: 16px;
   }
 
-  /* .first {
-    align-self: flex-end;
-  } */
+  .container ul {
+    margin-top: 16px;
+  }
 
   .contactText p {
     width: 255px;
@@ -288,6 +271,9 @@ h4 {
 }
 
 @media screen and (min-width: 1600px) {
+  .main {
+    justify-self: center;
+  }
   .container {
     padding-right: 80px;
     margin-left: -5rem;

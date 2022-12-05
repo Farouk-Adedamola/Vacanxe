@@ -3,12 +3,12 @@ import logo from "../../Assets/logo.svg";
 import { links, secondLink } from "./data";
 import classes from "./Nav.module.css";
 import { BiMenuAltRight } from "react-icons/bi";
-import { RxCross1 } from "react-icons/rx";
+// import { RxCross1 } from "react-icons/rx";
 const Nav = () => {
   const [toggle, setToggle] = useState(false);
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
-  const [fix, setFix] = useState(false);
+  // const [fix, setFix] = useState(false);
 
   useEffect(() => {
     if (toggle) {
@@ -53,16 +53,6 @@ const Nav = () => {
                 </li>
               );
             })}
-            {/* {secondLink.map((eachLink) => {
-              const { id, link } = eachLink;
-              return (
-                <li key={id}>
-                  <a href="/" className={classes.second}>
-                    {link}
-                  </a>
-                </li>
-              );
-            })} */}
           </ul>
           <ul id="secondlinks" className={classes.secondLink} ref={linksRef}>
             {secondLink.map((eachLink) => {

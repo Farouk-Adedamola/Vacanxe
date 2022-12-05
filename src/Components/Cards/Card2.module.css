@@ -92,11 +92,6 @@
     width: 367px;
   }
 
-  .section {
-    /* padding-right: -164px; */
-    /* padding-left: 0; */
-  }
-
   .section h2 {
     width: 379px;
     font-size: 28px;
@@ -110,7 +105,9 @@
 
 @media screen and (min-width: 1400px) {
   .main {
-    width: 70vw;
+    width: 80vw;
     margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
   }
 }

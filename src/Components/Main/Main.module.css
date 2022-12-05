@@ -50,6 +50,11 @@
   justify-content: center;
 }
 
+.group img {
+  /* display: none; */
+  mix-blend-mode: luminosity;
+}
+
 @media screen and (min-width: 760px) {
   .section {
     position: relative;

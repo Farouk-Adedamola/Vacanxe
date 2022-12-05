@@ -3,6 +3,7 @@ import classes from "./Footer.module.css";
 import logo from "../../Assets/logo.svg";
 import { FaTwitter, FaFacebook, FaGoogle } from "react-icons/fa";
 
+import oval from "../../Assets/Oval.svg";
 import { Community, AboutUs, Contacts } from "./data";
 
 const Footer = () => {
@@ -10,6 +11,7 @@ const Footer = () => {
     <Fragment>
       <section className={classes.section}>
         <div className={classes.image}>
+          {/* <img src={oval} alt="oval" /> */}
           <img src={logo} alt="logo" />
         </div>
       </section>
