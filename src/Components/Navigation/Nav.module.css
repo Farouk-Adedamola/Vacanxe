@@ -48,7 +48,8 @@
 
 .article ul li a {
   text-decoration: none;
-  font-family: "poppins";
+  font-family: "roboto";
+  font-weight: 500;
   font-size: 18px;
 }
 
@@ -57,11 +58,12 @@
 }
 
 .secondLink {
+  /* justify-self: flex-end; */
   margin-top: -1rem;
   margin-left: -1rem;
 
   /* padding-left: 0; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .first {
@@ -70,6 +72,7 @@
 
 .second {
   font-family: "roboto";
+  font-weight: 700;
   color: #4196b8;
 }
 
@@ -78,8 +81,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px 0 25px;
+    padding-left: 40px;
     height: 7vw;
+    padding-right: 10px;
   }
   .image {
     width: 200px;
@@ -95,8 +99,12 @@
     background: transparent;
     margin: 0;
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
     align-items: baseline;
+    width: 70vw;
+    margin: 0;
+    padding: 0;
   }
 
   .article2 {
@@ -115,12 +123,6 @@
   .article ul li a {
     font-size: 14px;
   }
-  .firstLink {
-    justify-self: flex-start;
-  }
-  .secondLink {
-    justify-self: flex-end;
-  }
 }
 
 @media screen and (min-width: 800px) {
@@ -130,9 +132,6 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .article {
-    /* width: 60vw; */
-  }
   .article ul li a {
     font-size: 15px;
   }
@@ -140,10 +139,8 @@
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding: 0 97px 0 65px;
-  }
-  .article {
-    /* width: 65vw; */
+    padding-left: 65px;
+    padding-right: 10px;
   }
 
   .article ul li {
@@ -152,5 +149,10 @@
 
   .article ul li a {
     font-size: 17px;
+  }
+
+  .image img {
+    width: 181px;
+    height: 60px;
   }
 }

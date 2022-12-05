@@ -35,7 +35,6 @@ h4 {
 
 .first {
   margin: 0 auto;
-  width: 70vw;
 }
 
 .first p,
@@ -56,8 +55,8 @@ h4 {
 
 .container {
   display: flex;
-  width: 80vw;
   justify-content: space-between;
+  padding-right: 50px;
 }
 
 .first button {
@@ -67,9 +66,20 @@ h4 {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 450px) {
+  .first,
+  .contacts {
+    width: 300px;
+  }
+
+  .container {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+
 .contacts {
-  width: 70vw;
-  /* width: 50vw; */
+  /* width: 270px; */
   margin: 0 auto;
   padding-bottom: 5rem;
 }
