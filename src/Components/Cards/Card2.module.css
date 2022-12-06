@@ -105,9 +105,17 @@
 
 @media screen and (min-width: 1400px) {
   .main {
-    width: 80vw;
+    /* width: 80vw; */
     margin: 0 auto;
-    justify-content: space-between;
+    /* justify-content: center; */
     display: flex;
+  }
+
+  .secondSection {
+    padding-left: 40px;
+  }
+
+  .section {
+    width: 410px;
   }
 }
