@@ -46,7 +46,7 @@
 
 @media screen and (min-width: 1000px) {
   .wrapper {
-    padding: 0 150px 95px 200px;
+    padding: 80px 150px 95px 200px;
   }
 
   .section {
@@ -56,7 +56,7 @@
 
 @media screen and (min-width: 1400px) {
   .wrapper {
-    padding: 0 auto 95px 300px;
+    padding: 80px auto 95px 300px;
   }
 
   .wrap2 {
