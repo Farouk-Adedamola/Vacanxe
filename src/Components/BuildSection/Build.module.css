@@ -202,8 +202,8 @@ textarea {
 @media screen and (min-width: 1200px) {
   .section {
     /* justify-content: space-between; */
-    justify-content: center;
-    margin-left: -4rem;
+    justify-content: space-around;
+    /* margin-left: -4rem; */
     /* margin: ; */
   }
   .underline {
@@ -212,7 +212,7 @@ textarea {
   }
 
   .secondSection {
-    padding-left: 70px;
+    padding-left: 30px;
   }
 
   input {
