@@ -11,8 +11,8 @@ const Footer = () => {
     <Fragment>
       <section className={classes.section}>
         <div className={classes.image}>
-          <img src={oval} alt="oval" />
-          {/* <img src={logo} alt="logo" /> */}
+          {/* <img src={oval} alt="oval" /> */}
+          <img src={logo} alt="logo" />
         </div>
       </section>
       <section className={classes.secondSection}>
