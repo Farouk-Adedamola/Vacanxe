@@ -6,7 +6,7 @@ export const links = [
   {
     id: "2",
     link: "Programs",
-    CSS: { borderBottom: "2px solid #4EB9E3" },
+    CSS: { borderBottom: "4px solid #4EB9E3" },
   },
   {
     id: "3",

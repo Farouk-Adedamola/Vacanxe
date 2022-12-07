@@ -25,7 +25,7 @@ const Nav = () => {
           <button
             id="button"
             type="button"
-            style={{ transition: "all .6s" }}
+            style={{ transition: "all 10s" }}
             onClick={() => setToggle(!toggle)}
           >
             {toggle ? (

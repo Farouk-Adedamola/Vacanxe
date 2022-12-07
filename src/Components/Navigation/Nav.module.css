@@ -34,7 +34,6 @@
   transition: all 0.5s;
   height: 0;
   overflow: hidden;
-  /* margin-left: -1rem; */
 }
 
 .article > ul {
@@ -57,17 +56,18 @@
   margin-left: -1rem;
 }
 
+.firstLink li a {
+  font-size: 500;
+}
+
 .secondLink {
-  /* justify-self: flex-end; */
   margin-top: -1rem;
   margin-left: -1rem;
-
-  /* padding-left: 0; */
-  /* border: 1px solid red; */
 }
 
 .first {
   color: #2e2e2e;
+  font-weight: 500;
 }
 
 .second {
