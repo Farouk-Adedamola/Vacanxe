@@ -48,12 +48,9 @@
     margin-top: 4rem;
     display: flex;
     flex-direction: row;
-    /* flex-direction: row-reverse; */
-    /* justify-content: space-between; */
     align-items: center;
   }
   .section {
-    /* justify-self: flex-end; */
     margin: 0;
     width: 50%;
   }
@@ -81,9 +78,6 @@
 
 @media screen and (min-width: 1200px) {
   .main {
-    /* display: flex; */
-    /* width: 80vw; */
-    /* justify-content: space-between; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 164px;
@@ -105,9 +99,7 @@
 
 @media screen and (min-width: 1400px) {
   .main {
-    /* width: 80vw; */
-    margin: 0 auto;
-    /* justify-content: center; */
+    margin: 50px auto;
     display: flex;
   }
 

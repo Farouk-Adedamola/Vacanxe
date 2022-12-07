@@ -52,6 +52,8 @@ input {
   border-radius: 10px;
   margin-top: 4px;
   outline: transparent;
+  width: auto;
+  max-width: 574px;
 }
 
 textarea {
@@ -234,7 +236,7 @@ textarea {
     padding-left: 70px;
   }
   input {
-    width: 574px;
+    max-width: 574px;
   }
   .container p {
     width: 575px;

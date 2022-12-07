@@ -11,6 +11,7 @@ const Nav = () => {
   // const [fix, setFix] = useState(false);
 
   useEffect(() => {
+    setTimeout(() => {});
     if (toggle) {
       linksContainerRef.current.style.height = `${100}vh`;
     } else {
@@ -25,7 +26,7 @@ const Nav = () => {
           <button
             id="button"
             type="button"
-            style={{ transition: "all 10s" }}
+            style={{ transition: "all .6s" }}
             onClick={() => setToggle(!toggle)}
           >
             {toggle ? (
