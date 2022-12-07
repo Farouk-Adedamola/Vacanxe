@@ -126,7 +126,8 @@ h4 {
   }
   .image {
     position: absolute;
-    top: 0;
+    top: -2rem;
+    overflow: hidden;
     left: -4.5rem;
   }
 
