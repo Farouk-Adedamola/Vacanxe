@@ -3,6 +3,7 @@ import logo from "../../Assets/logo.svg";
 import { links, secondLink } from "./data";
 import classes from "./Nav.module.css";
 import { BiMenuAltRight } from "react-icons/bi";
+import { Link } from "react-router-dom";
 // import { RxCross1 } from "react-icons/rx";
 const Nav = () => {
   const [toggle, setToggle] = useState(false);
@@ -45,24 +46,24 @@ const Nav = () => {
         <article className={classes.article} ref={linksContainerRef}>
           <ul id="links" ref={linksRef} className={classes.firstLink}>
             {links.map((eachLink) => {
-              const { id, link, CSS } = eachLink;
+              const { id, link, CSS, path } = eachLink;
               return (
                 <li key={id}>
-                  <a href="/" className={classes.first} style={CSS}>
+                  <Link to={path} className={classes.first} style={CSS}>
                     {link}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
           </ul>
           <ul id="secondlinks" className={classes.secondLink} ref={linksRef}>
             {secondLink.map((eachLink) => {
-              const { id, link } = eachLink;
+              const { id, link, path } = eachLink;
               return (
                 <li key={id}>
-                  <a href="/" className={classes.second}>
+                  <Link to={path} className={classes.second}>
                     {link}
-                  </a>
+                  </Link>
                 </li>
               );
             })}

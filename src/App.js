@@ -1,32 +1,33 @@
 import React, { Fragment } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import "./App.css";
-import classes from "./App.module.css";
-import Nav from "./Components/Navigation/Nav";
-import Main from "./Components/Main/Main";
-import CenterButton from "./Components/CenterButton/CenterButton";
-import Card1 from "./Components/Cards/Card1";
-import Card2 from "./Components/Cards/Card2";
-import Card3 from "./Components/Cards/Card3";
-import Build from "./Components/BuildSection/Build";
-import Footer from "./Components/Footer/Footer";
+// import classes from "./App.module.css";
+import Error from "./Pages/Error";
+import Home from "./Pages/Home";
+import Program from "./Pages/Program";
+import Services from "./Pages/Services";
+import Pricing from "./Pages/Pricing";
+import Login from "./Pages/Login";
+import Signup from "./Pages/Signup";
+
+import SharedLayout from "./Pages/SharedLayout";
 
 function App() {
   return (
+    // <Home />
     <Fragment>
-      <Nav />
-      <Main />
-      <CenterButton />
-      <section className={classes.wrapper}>
-        <Card1 />
-        <Card2 />
-        <Card3 />
-      </section>
-      <section className={classes.section}>
-        <Build />
-      </section>
-      <footer className={classes.footer}>
-        <Footer />
-      </footer>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<Home />} />
+            <Route path="services" element={<Services />} />
+            <Route path="pricing" element={<Pricing />} />
+            <Route path="login" element={<Login />} />
+            <Route path="signup" element={<Signup />} />
+            <Route path="*" element={<Error />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </Fragment>
   );
 }
