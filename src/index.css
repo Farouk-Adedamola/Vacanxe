@@ -12,3 +12,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all h1 {
+  transform: translateY(40vh);
+}
+.error {
+  display: grid;
+  place-items: center;
+  transform: translateY(35vh);
+}
+
+.Error-link {
+  color: #4eb9e3;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  background: #777777;
+  transition: all 0.3s;
+}
+
+.Error-link:hover {
+  transform: translateX(0.3rem);
+}

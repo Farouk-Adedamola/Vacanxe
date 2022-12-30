@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div>
+    <div className="all">
       <h1>Page in Production</h1>
     </div>
   );

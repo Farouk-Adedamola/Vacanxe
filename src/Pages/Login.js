@@ -1,8 +1,9 @@
 import React from "react";
+import "../index.css";
 
 const Login = () => {
   return (
-    <div>
+    <div className="all">
       <h1>Page in Production</h1>
     </div>
   );
