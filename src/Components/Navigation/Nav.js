@@ -3,8 +3,9 @@ import logo from "../../Assets/logo.svg";
 import { links, secondLink } from "./data";
 import classes from "./Nav.module.css";
 import { BiMenuAltRight } from "react-icons/bi";
-import { Link } from "react-router-dom";
 // import { RxCross1 } from "react-icons/rx";
+import { GiCrossMark } from "react-icons/gi";
+import { NavLink } from "react-router-dom";
 const Nav = () => {
   const [toggle, setToggle] = useState(false);
   const linksContainerRef = useRef(null);
@@ -31,11 +32,13 @@ const Nav = () => {
             onClick={() => setToggle(!toggle)}
           >
             {toggle ? (
-              <BiMenuAltRight
+              <GiCrossMark
                 style={{
                   rotate: "45deg",
                   transition: "all .5s",
                   color: "#222222",
+                  fontSize: "1.7rem",
+                  color: "#ffae1b",
                 }}
               />
             ) : (
@@ -46,12 +49,20 @@ const Nav = () => {
         <article className={classes.article} ref={linksContainerRef}>
           <ul id="links" ref={linksRef} className={classes.firstLink}>
             {links.map((eachLink) => {
-              const { id, link, CSS, path } = eachLink;
+              const { id, link, path } = eachLink;
               return (
                 <li key={id}>
-                  <Link to={path} className={classes.first} style={CSS}>
+                  <NavLink
+                    to={path}
+                    className={classes.first}
+                    style={({ isActive }) => {
+                      return {
+                        borderBottom: isActive ? "3px solid #4EB9E3" : "none",
+                      };
+                    }}
+                  >
                     {link}
-                  </Link>
+                  </NavLink>
                 </li>
               );
             })}
@@ -61,9 +72,17 @@ const Nav = () => {
               const { id, link, path } = eachLink;
               return (
                 <li key={id}>
-                  <Link to={path} className={classes.second}>
+                  <NavLink
+                    to={path}
+                    className={classes.second}
+                    style={({ isActive }) => {
+                      return {
+                        borderBottom: isActive ? "3px solid #4EB9E3" : "none",
+                      };
+                    }}
+                  >
                     {link}
-                  </Link>
+                  </NavLink>
                 </li>
               );
             })}
