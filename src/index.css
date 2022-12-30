@@ -21,7 +21,11 @@ code {
 
 .all h1 {
   transform: translateY(40vh);
+  background: linear-gradient(to right, #ffae1b 15%, #5ba4c2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 .error {
   display: grid;
   place-items: center;
@@ -29,14 +33,29 @@ code {
 }
 
 .Error-link {
-  color: #4eb9e3;
   font-size: 1rem;
   padding: 1rem;
   border-radius: 0.6rem;
-  background: #777777;
-  transition: all 0.3s;
+  border: 2px solid #330867;
+  font-weight: bold;
+  transition: all 0.5s;
+  background: linear-gradient(to right, #ffae1b 15%, #5ba4c2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.error h1,
+.error p {
+  background: linear-gradient(to right, #178598 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.error p {
+  font-size: 1.5rem;
 }
 
 .Error-link:hover {
-  transform: translateX(0.3rem);
+  transform: translateY(0.5rem);
+  border-color: #178598;
 }
