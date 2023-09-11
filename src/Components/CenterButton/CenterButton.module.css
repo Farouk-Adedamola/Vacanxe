@@ -16,9 +16,30 @@
   border: 2px solid #4196b8;
 }
 
+.section button:first-child:hover {
+  background: #000c2d;
+  color: #fff;
+  border: 2px solid #949494;
+  transition: all 1s ease-out;
+
+  .first {
+    color: #fff;
+  }
+}
+
 .section button:last-child {
   background: #ededed33;
   border: 2px solid #afafaf;
+}
+
+.section button:last-child:hover {
+  border: 2px solid #4196b8;
+  background: #000c2d;
+  transition: all 1s;
+
+  .second {
+    color: #fff;
+  }
 }
 
 a {

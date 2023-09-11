@@ -4,9 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import classes from "./App.module.css";
 import Error from "./Pages/Error";
 import Home from "./Pages/Home";
-import Program from "./Pages/Program";
+import AboutUs from "./Pages/AboutUs";
 import Services from "./Pages/Services";
-import Pricing from "./Pages/Pricing";
+import ContactUs from "./Pages/ContactUs";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 
@@ -20,11 +20,11 @@ function App() {
         <Routes>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<Home />} />
+            <Route path="AboutUs" element={<AboutUs />} />
             <Route path="services" element={<Services />} />
-            <Route path="program" element={<Program />} />
-            <Route path="pricing" element={<Pricing />} />
-            <Route path="login" element={<Login />} />
-            <Route path="signup" element={<Signup />} />
+            <Route path="ContactUs" element={<ContactUs />} />
+            {/* <Route path="login" element={<Login />} /> */}
+            {/* <Route path="signup" element={<Signup />} /> */}
             <Route path="*" element={<Error />} />
           </Route>
         </Routes>

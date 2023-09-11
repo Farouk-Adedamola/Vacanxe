@@ -1,14 +1,13 @@
 export const links = [
   {
     id: "1",
-    link: "Post Job",
+    link: "Home",
     path: "/",
   },
   {
     id: "2",
-    link: "Programs",
-    path: "program",
-    // CSS: { borderBottom: "4px solid #4EB9E3" },
+    link: "About Us",
+    path: "AboutUs",
   },
   {
     id: "3",
@@ -17,20 +16,20 @@ export const links = [
   },
   {
     id: "4",
-    link: "Pricing",
-    path: "pricing",
+    link: "Contact Us",
+    path: "ContactUs",
   },
 ];
 
-export const secondLink = [
-  {
-    id: "1",
-    link: "Login",
-    path: "login",
-  },
-  {
-    id: "2",
-    link: "Sign up",
-    path: "signup",
-  },
-];
+// export const secondLink = [
+//   {
+//     id: "1",
+//     link: "Login",
+//     path: "login",
+//   },
+//   {
+//     id: "2",
+//     link: "Sign up",
+//     path: "signup",
+//   },
+// ];
