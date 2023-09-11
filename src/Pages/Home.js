@@ -21,9 +21,9 @@ const Home = () => {
         <Card3 />
       </section>
 
-      <footer className={classes.footer}>
-        <Footer />
-      </footer>
+      {/* <footer className={classes.footer}> */}
+      <Footer />
+      {/* </footer> */}
     </Fragment>
   );
 };
