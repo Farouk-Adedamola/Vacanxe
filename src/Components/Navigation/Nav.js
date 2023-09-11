@@ -67,7 +67,7 @@ const Nav = () => {
               );
             })}
           </ul>
-          <ul id="secondlinks" className={classes.secondLink} ref={linksRef}>
+          {/* <ul id="secondlinks" className={classes.secondLink} ref={linksRef}>
             {secondLink.map((eachLink) => {
               const { id, link, path } = eachLink;
               return (
@@ -86,7 +86,7 @@ const Nav = () => {
                 </li>
               );
             })}
-          </ul>
+          </ul> */}
         </article>
       </section>
     </Fragment>
