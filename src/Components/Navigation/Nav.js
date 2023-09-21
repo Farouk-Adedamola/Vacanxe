@@ -67,26 +67,7 @@ const Nav = () => {
               );
             })}
           </ul>
-          {/* <ul id="secondlinks" className={classes.secondLink} ref={linksRef}>
-            {secondLink.map((eachLink) => {
-              const { id, link, path } = eachLink;
-              return (
-                <li key={id}>
-                  <NavLink
-                    to={path}
-                    className={classes.second}
-                    style={({ isActive }) => {
-                      return {
-                        borderBottom: isActive ? "3px solid #4EB9E3" : "none",
-                      };
-                    }}
-                  >
-                    {link}
-                  </NavLink>
-                </li>
-              );
-            })}
-          </ul> */}
+        
         </article>
       </section>
     </Fragment>
